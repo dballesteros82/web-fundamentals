@@ -1,0 +1,207 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px 8px;
+      border-bottom: 1px solid #ddd;
+    }
+ 
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: 20px;
+    }
+
+    .logo-icon {
+      width: 70px;
+      height: 70px;
+      background: #e8f4fc;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      line-height: 1;
+      border: 1px solid #cce0f0;
+    }
+
+    .logo-text {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.2;
+      max-width: 70px;
+    }
+
+
+    .site-title {
+      font-size: 32px;
+      font-weight: normal;
+      color: #6b6b6b;
+      letter-spacing: 0.5px;
+      flex-grow: 1;
+      text-align: center;
+      margin-right: 90px; /* balance the logo */
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      padding: 10px 20px 14px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .nav a {
+      color: #1a6bb5;
+      text-decoration: underline;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      color: #0d4a80;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(to right, #7ba8b8, #b0b0b0);
+      color: #fff;
+      text-align: center;
+      padding: 22px 20px 18px;
+      font-size: 28px;
+      font-weight: normal;
+      position: relative;
+    }
+
+    .banner-dots {
+      margin-top: 10px;
+      letter-spacing: 6px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .divider {
+      margin: 20px;
+      border: 1px solid lightgray;
+    }
+
+    /* Main content - 3 columns */
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 20px;
+      padding: 0;
+    }
+
+    .column {
+      flex: 1;
+      padding: 24px 28px 30px;
+      min-height: 420px;
+      border-radius: 15px;
+      justify-content: space-between;
+    }
+
+    .column h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: #222;
+      text-align: center;
+    }
+
+    /* News column */
+    .news {
+      background: #e8f0fa;
+    }
+
+    .news p {
+      margin-bottom: 14px;
+      color: #333;
+    }
+
+    .news ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .news li {
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    /* Find a Dentist column */
+    .find {
+      background: #f5e6f0;
+    }
+
+    .find p {
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    .form-group input[type="text"] {
+      width: 100%;
+      max-width: 260px;
+      padding: 6px 8px;
+      border: 1px solid #aaa;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    .checkbox-group {
+      margin-top: 18px;
+    }
+
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    /* Quick Tips column */
+    .tips {
+      background: #e8d9f0;
+    }
+
+    .tips ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .tips li {
+      margin-bottom: 14px;
+      color: #333;
+    }

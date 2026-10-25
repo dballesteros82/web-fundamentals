@@ -1,0 +1,27 @@
+html, body {
+      height: 100%;
+      margin: 0;
+    }
+    
+    body {
+      display: flex;          
+      justify-content: center;
+      align-items: center;
+      background: blue;
+    }
+
+    .blue-box {
+      display: flex;               
+      justify-content: center; 
+      align-items: center;     
+      width: 500px;           
+      height: 500px;
+      background-color: blue;
+
+    }
+
+    .red-box {
+      width: 120px;
+      height: 120px;
+      background-color: red;
+    }

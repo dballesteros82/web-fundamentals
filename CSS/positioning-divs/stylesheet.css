@@ -1,0 +1,45 @@
+    .blue-box-container {
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+    }
+
+    .red-box-container {
+      border: 1px solid black;
+      display: flex;
+      justify-content: left;
+    }
+
+    .green-box-container {
+      border: 1px solid black;
+      display: flex;
+      justify-content: right;
+    }
+
+    .blue-box {
+      box-sizing: border-box;
+      width: 40px;           
+      height: 40px;
+      background-color: blue;
+      margin-right: 10%;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .red-box {
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 0px;
+    }
+
+    .green-box {
+      width: 40px;
+      height: 40px;
+      background-color: green;
+      margin-right: 40px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }

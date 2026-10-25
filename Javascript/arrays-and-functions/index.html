@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array & String Functions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+    }
+    .result {
+      background: #f4f4f4;
+      padding: 12px;
+      border-radius: 6px;
+      margin: 10px 0 25px 0;
+      font-family: monospace;
+    }
+    h2 {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Replace Negative Numbers</h2>
+  <p>Original array: <code>[-1, 2, -3, 4, -5]</code></p>
+  <div class="result" id="arrayResult"></div>
+
+  <h2>2. Reverse a String</h2>
+  <p>Original string: <code>"string"</code></p>
+  <div class="result" id="stringResult"></div>
+
+  <script>
+    // 1. Function that replaces all negative values with "Negative"
+    function replaceNegatives(arr) {
+      let result = [];
+
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+          result.push("Negative");
+        } else {
+          result.push(arr[i]);
+        }
+      }
+
+      return result;
+    }
+
+    // 2. Function that reverses a string
+    function reverseString(str) {
+      let reversed = "";
+
+      for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+      }
+
+      return reversed;
+    }
+
+    // ===== Test the functions =====
+    const numbers = [-1, 2, -3, 4, -5];
+    const newArray = replaceNegatives(numbers);
+    document.getElementById("arrayResult").textContent = JSON.stringify(newArray);
+
+    const word = "string";
+    const reversed = reverseString(word);
+    document.getElementById("stringResult").textContent = reversed;
+  </script>
+
+</body>
+</html>

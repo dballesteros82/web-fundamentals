@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" required maxlength="50"><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" required maxlength="50"><br>
+
+        <label for="email">email</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age" required min="1" max="120"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h1 id="fullName"></h1>
+    <h1 id="displayEmail"></h1>
+    <h1 id="displayAge"></h1>
+    <script src="script.js"></script>
+</body>
+</html>
